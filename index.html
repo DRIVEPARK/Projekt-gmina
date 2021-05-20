@@ -8,134 +8,189 @@
     <title>KĄKOLEWNICA</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="media-queries.css" type="text/css">
+    <link rel="stylesheet" href="main-container-styling.css" type="text/css">
+    <link rel="stylesheet" href="baner-styling.css" type="text/css">
+    <link rel="stylesheet" href="footer-styling.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/be39037148.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <div>
+    <header>
 
-        <header>
-
-            <ul>
-                <li>STRONA GŁÓWNA</li>
-                <li>SAMORZĄD</li>
-                <li>INWESTYCJE</li>
-                <li>DLA PRZEDSIĘBIORCY</li>
-                <li>DLA MIESZKAŃCA</li>
-                <li>DLA ODWIEDZAJĄCYCH</li>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" class="menu_links">STRONA GŁÓWNA</a></li>
+                <li><a href="#" class="menu_links">SAMORZĄD</a></li>
+                <li><a href="#" class="menu_links">INWESTYCJE</a></li>
+                <li><a href="#" class="menu_links">DLA PRZEDSIĘBIORCY</a></li>
+                <li><a href="#" class="menu_links">DLA MIESZKAŃCA</a></li>
+                <li><a href="#" class="menu_links">DLA ODWIEDZAJĄCYCH</a></li>
             </ul>
+        </nav>
 
-        </header>
+    </header>
+
+    <div id="main_container">
+
 
         <div id="baner">
 
-            <div>
-                <img src="bip_tab.jpg" alt="biuletyn informacji publicznej">
-                <!-- opcjonalnie -->
-            </div>
+            <div id="inner_baner">
 
-            <div>
-                <img src="" alt="ikona facebooka">
-                <img src="" alt="ikona instagrama">
-                <img src="" alt="ikona yt">
-            </div>
+                <div class="baner_containers baner_container_1">
+                    <a href="https://ugkakolewnica.bip.lubelskie.pl/index.php?id=6" target="_blank"><img src="bip_tab.jpg" alt="biuletyn informacji publicznej"></a>
+                </div>
 
-            <div>
-                <img src="baner.jpg" alt="baner gminy">
-            </div>
+                <div class="icons baner_containers baner_container_2">
+                    <a href="#"><i class=" fb fab fa-facebook"></i></a>
+                    <a href="#"><i class=" yt fab fa-youtube"></i></a>
+                </div>
 
-            <div>
-                <h3>mail gminy</h3>
-            </div>
+                <div class="baner_containers baner_container_3">
+                    <img src="baner.jpg" alt="baner gminy">
+                </div>
 
-            <div>
-                <h3>numer telefonu do gminy</h3>
+                <div class="menu_links baner_containers baner_container_4">
+                    <h3>gmina@kakolewnica.lublin.pl</h3>
+                </div>
+
+                <div class=" menu_links baner_containers baner_container_5">
+                    <h3>83 372-20-10</h3>
+                </div>
+
             </div>
 
         </div>
 
+        <div id="inner_main_container">
 
-    </div>
+            <div id="grid">
 
-    <div>
+                <div class="grid_container grid_container_1">
 
-        <div>
-            <img src="" alt="lewa strzałka">
+                    <div class="">
+                        <img src="zdjecie_test.jpg" alt="kąkolewnica panorama">
+                    </div>
+
+                </div>
+
+                <div class="grid_container grid_container_2">
+                    <img src="spis_powszechny.jpg" alt="spis powszechny baner">
+                </div>
+
+                <div class="grid_container grid_container_3">
+
+                    <a href="https://www.e-podroznik.pl">
+
+                        <h1>ROZKŁAD JAZDY BUSÓW</h1>
+
+                    </a>
+                </div>
+
+                <div class="grid_container grid_container_4">
+
+                    <div class="app-title">
+                        <p>
+                            <h3>Pogoda</h3>
+                        </p>
+                    </div>
+
+                    <div class="notification">
+
+                    </div>
+
+                    <div class="weather-container">
+                        <div class="weather-icon">
+                            <img src="icons/unknown.png" alt="">
+                        </div>
+
+                        <div class="temperature-value">
+                            <p>-<span>C</span></p>
+                        </div>
+
+                        <div class="temperature-description">
+                            <p>-</p>
+                        </div>
+
+                        <div class="location">
+                            <p></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div>
-            <img src="" alt="prawa strzałka">
-        </div>
+    </div>
 
     </div>
 
-    <div>
-        <img src="" alt="spis powszechny baner">
-    </div>
+    <div id="foot_nr_1">
 
-    <div>
-
-        <!--kalendarz prawa strona-->
-
-    </div>
-
-    <div>
-
-        <!--pogoda prawa strona-->
-
-    </div>
-
-    <div>
 
         <!--stopka nr 1-->
 
-        <div>
+        <div class="footer_container footer_container_1 ">
 
             <h3>Urząd gminy Kąkolewnica</h3>
-            <div>
-                <img src="" alt="">
+            <div class="inner_footer_container_1">
+                <img src="herb.svg" alt="herb gminy">
                 <p>
-                    ul. Lubelska 5 ` 21-302 Kąkolewnica NIP: <b>5381850671</b> Regon: <b>030237552</b>
+                    ul. Lubelska 5 <br> 21-302 Kąkolewnica <br> NIP: <b>5381850671</b> <br> Regon: <b>030237552</b>
                 </p>
             </div>
 
         </div>
 
-        <h3>DANE KONTAKTOWE</h3>
+        <div class="footer_container footer_container_2">
 
-        <p>
-            tel.
-            <!--numer telefonu do gminy-->
-            fax.
-            <!--numer fax do gminy-->
-        </p>
+            <div class="inner_footer_container_2">
 
-        <h4>mail do gminy</h4>
+                <h3>DANE KONTAKTOWE</h3> <br>
 
-        <div>
+                <p>tel. <b>83 372-20-10</b> </p>
 
-            <img src="" alt="">
+                <p> fax. <b>83 372-20-49</b></p><br>
 
-            <p>
-                Godziny pracy:
-                <!--godziny pracy gminy-->
-            </p>
+                <h4>gmina@kakolewnica.lublin.pl</h4>
+
+            </div>
 
         </div>
 
-        <div>
+        <div class="footer_container footer_container_3">
 
-            <!--jeszcze jakaś ikona wskaźnika na mapie się przyda-->
+            <i class="footer_icons far fa-clock"></i> <br>
+
+            <p>Godziny pracy:</p>
+
+            <p>PN.-PT. <b> 7.30-15.30</b></p>
+
+        </div>
+
+        <div class="footer_container footer_container_4">
 
             <a href="https://www.google.pl/maps/place/Kąkolewnica/@51.899399,22.5946877,12z/data=!3m1!4b1!4m5!3m4!1s0x4721f67403c49a83:0xd349668e482d29ba!8m2!3d51.8994863!4d22.6377219" target="_blank">
-                <h3>MAPA</h3>
+                <i class="footer_icons fas fa-map-marker-alt"></i>
+            </a> <br>
+
+            <a href="https://www.google.pl/maps/place/Kąkolewnica/@51.899399,22.5946877,12z/data=!3m1!4b1!4m5!3m4!1s0x4721f67403c49a83:0xd349668e482d29ba!8m2!3d51.8994863!4d22.6377219" target="_blank">
+                <h3>JESTEŚMY TUTAJ</h3>
             </a>
 
         </div>
 
-
     </div>
+
+
 
 
 
@@ -147,8 +202,8 @@
     </footer>
 
 
-
     <script type="text/javascript" src="scripts.js" async defer></script>
+
 
 </body>
 
